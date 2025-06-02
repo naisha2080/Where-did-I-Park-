@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where did I park</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+      </style>
+</head>
+<body>
+  <h2>Where did I park?</h2>
+    <main class="container">
+        
+    <!-- For entering location manually -->
+      <div class="manual-location">
+        <h3> Enter Parking Location</h3>
+       <input type="text" id="parking-location" placeholder="Enter parking details.....">
+        <br>
+        <button id="save-location">Save My Spot</button>
+      </div> 
+
+    <!-- For GPS location -->
+          <div class="gps-location">
+            <h3>Use My Current Location</h3>
+            <button id="use-location">Use Location</button>
+            <p id="location-info"></p>
+          </div>
+    <!-- Location display -->
+     <div class="location-display" style="display: none;">
+        <h3>Saved Parking Location</h3>
+        <p id="location-display-text"></p>
+        <a id="location-display-map" target="_blank">Open in Google Maps </a>
+        <p id="timestamp"></p>
+        <button id="clear-location">Clear Saved Location</button>
+     </div>
+    </main>
+    <footer>
+      <p>Made with love by a developer who has alzheimers (not really)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
